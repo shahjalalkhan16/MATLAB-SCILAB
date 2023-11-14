@@ -1,0 +1,13 @@
+clc;
+close all;
+clear all;
+t=0:0.1:2*pi;
+a =[1,-1,0.9];
+b= [1];
+n =[-20,20];
+x= sin(t);
+fl = filter(b,a,x);
+stem(t,fl);
+title('Sinusodal signal with filter');
+xlabel('n');
+ylabel('filtering');
